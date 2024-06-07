@@ -128,4 +128,28 @@ body {
   animation-fill-mode: backwards; /* applies the animation before it starts, like opacity 0 in the moveInBottom animation */
 }
 
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.5)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top; /* it holds the top and crops bottom image, so top always stays alright */
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header-logo {
+  height: 3.5rem;
+}
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
