@@ -82,6 +82,50 @@ body {
   backface-visibility: hidden;
 }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -128,6 +172,13 @@ body {
   animation-fill-mode: backwards; /* applies the animation before it starts, like opacity 0 in the moveInBottom animation */
 }
 
+.btn-text:link, .btn-text:visited {
+  text-decoration: none;
+  color: #7ed56f;
+  display: inline-block;
+  border-bottom: 1px solid #7ed56f;
+  padding: 3px;
+}
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.5)), url(../img/hero.jpg);
@@ -154,7 +205,6 @@ body {
 
 .row {
   width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -166,8 +216,6 @@ body {
   clear: both;
 }
 .row [class^=col-] {
-  background-color: aquamarine;
-  height: 3rem;
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
@@ -190,6 +238,12 @@ body {
 }
 .row .col-3-of-4 {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 6rem * 2);
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 
 /*# sourceMappingURL=style.css.map */

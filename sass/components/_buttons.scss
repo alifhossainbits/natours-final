@@ -53,3 +53,20 @@
     animation-fill-mode: backwards; /* applies the animation before it starts, like opacity 0 in the moveInBottom animation */
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-primary;
+    display: inline-block;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+  }
+
+  &:hover {
+  }
+
+  &:active {
+  }
+}
