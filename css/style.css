@@ -134,6 +134,7 @@ body {
   border-radius: 100rem;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -178,7 +179,42 @@ body {
   display: inline-block;
   border-bottom: 1px solid #7ed56f;
   padding: 3px;
+  font-size: 1.6rem;
+  transition: all 0.2s;
 }
+.btn-text:hover {
+  background-color: #7ed56f;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(1px);
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  border-radius: 2px;
+  box-shadow: 0rem 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+.composition__photo-p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo-p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition__photo-p3 {
+  left: 20%;
+  top: 10rem;
+}
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.5)), url(../img/hero.jpg);
