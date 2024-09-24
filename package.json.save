@@ -1,0 +1,14 @@
+{
+  "name": "newnatours",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "alif hossain",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.2"
+  }
+}
